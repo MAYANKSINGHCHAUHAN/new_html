@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex</title>
+</head>
+<style>
+    *{
+    margin: 0;
+    padding: 0;
+} 
+.maindiv{
+    display: flex;
+    background-color: #131313;
+    justify-content: space-between;
+    align-items: center;
+    height: 80px;
+    flex-direction:row;
+}
+#first{
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.center{
+    display: flex;
+    align-items: center;
+    margin: 0px 10px;
+
+}
+.center>div{
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: grey;
+    text-align: center;
+
+}
+
+.end{
+    display: flex;
+    margin-right: 20px;
+}
+
+.end>div{
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background-color: aliceblue;
+}
+</style>
+<body>
+    <div class="maindiv">
+       <span id="first">10:04 | qwf-acv-hsa</span>
+        <div class="center">
+            <div>1</div>
+            <div>2</div>
+            <div>3</div>
+            <div>4</div>
+            <div>5</div>
+            <div>6</div>
+            <div>7</div>
+            <div>8</div>
+        </div>
+        <div class="end">
+            <div>9</div>
+            <div>10</div>
+            <div>11</div>
+            <div>12</div>
+            <div>13</div>
+        </div>
+    </div>
+</body>
+</html>
